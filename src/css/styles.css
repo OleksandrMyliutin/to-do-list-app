@@ -12,6 +12,7 @@
 
 /* Sections style */
 @import url('./header.css');
+@import url('./new-schedule.scss');
 @import url('./log-in.css');
 @import url('./main.css');
 @import url('./action_menu-btn.scss');
