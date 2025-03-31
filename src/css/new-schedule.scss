@@ -44,8 +44,7 @@
     margin-top: 24px;
     &-note-form{
             display: flex;
-            justify-content: center;
-            align-items: center;
+            flex-direction: column;
             flex-wrap: wrap;
             row-gap: 24px;
         &-group{
@@ -54,7 +53,36 @@
             align-items: center;
             flex-wrap: wrap;
             row-gap: 21px;
-            column-gap: 240px;
+            &-btn{
+                background-color: transparent;
+                font-size: 12px;
+                letter-spacing: -0.03em;
+                text-align: right;
+                color: #828282;
+            }
+            &-number{
+                width: 40px;
+                background: #ccc2fe;
+                transition: border, box-shadow  250ms linear;
+            }
+            &-number:focus{
+                outline: none;
+                border: 1px solid #ccc2fe;
+                box-shadow: 0 0 8px #c4b9fd, 0 0 10px #c4b9fd;
+            }
+            &-SubmitBtn{
+                background: #fff;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 1.2;
+                letter-spacing: -0.01em;
+                text-align: center;
+                color: #828282;
+                text-transform: uppercase;
+                border-radius: 12px;
+                background: #ccc2fe;
+                width: 336px;
+            }
             &-calendar{
                 position: relative;
                 &-date{
@@ -77,6 +105,12 @@
                 width: 336px;
                 height: 32px;
                 background: #ccc2fe;
+                transition: border, box-shadow  250ms linear;
+            }
+            &-input:focus{
+                outline: none;
+                border: 1px solid #ccc2fe;
+                box-shadow: 0 0 8px #c4b9fd, 0 0 10px #c4b9fd;
             }
             &-toggle{
                 position: relative;
@@ -105,4 +139,23 @@
 }
 .title{
     font-weight: 600;
+}
+
+#question{
+    z-index: 3;
+    bottom: 50px;
+    padding: 0px;
+    outline: none;
+    border: 1px solid #ccc2fe;
+    box-shadow: 0 0 8px #c4b9fd, 0 0 10px #c4b9fd;
+    width: 350px;
+    justify-content: space-around;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: -5px;
+    margin-top: 50px;
+}
+
+.tracking{
+    display: none;
 }

@@ -40,17 +40,26 @@
                     </div>
                 </div>
                 <div class="wrapper-note-form-group">
-                    <label  class="wrapper-note-form-group-label" for="calendar">Start from</label>
-                    <div class="wrapper-note-form-group-calendar">
-                        <button class="wrapper-note-form-group-calendar-btn"></button>
-                        <input type="date" id="realDateInput" class="wrapper-note-form-group-calendar-date" />
-                    </div>
+                    <label  class="wrapper-note-form-group-label" for="StartFrom">Start from</label>
+                    <button class="wrapper-note-form-group-btn" id="StartFrom" type="button">Set date</button>
                 </div>
-                <div class="wrapper-note-form-group">
-                    <labe  class="wrapper-note-form-group-label" for="calendar">Finish</labe>
+                <div class="wrapper-note-form-group" id="question">
+                    <label  class="wrapper-note-form-group-label" for="calendar">How many days should I remind you?</label>
+                    <input type="number" class="wrapper-note-form-group-number" id="inputQuestion" min="0" max="32" value="0">
+                    <button class="wrapper-note-form-group-SubmitBtn" id="SubmitBtn" type="button">Submit</button>
+                </div>
+                <div class="wrapper-note-form-group tracking" id="finishShow">
+                    <label  class="wrapper-note-form-group-label" for="FinishFrom">Finish</label>
+                    <button class="wrapper-note-form-group-btn" id="FinishFrom" type="button">Set date</button>
+                </div>
+                <div class="wrapper-note-form-group tracking">
+                    <label  class="wrapper-note-form-group-label" for="calendar">Repeat</label>
                     <input class="wrapper-note-form-group-calendar" type="text" id="calendar"/>
                 </div>
-                <!-- <textarea class="note-form-textarea" name="your-text" id="" placeholder="Your-text"></textarea> -->
+                <div class="wrapper-note-form-group tracking">
+                    <label  class="wrapper-note-form-group-label" for="calendar">Reminder</label>
+                    <input class="wrapper-note-form-group-calendar" type="text" id="calendar"/>
+                </div>
             </form>
         </div>
     </div>
