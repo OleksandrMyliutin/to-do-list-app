@@ -1,0 +1,66 @@
+<section class="new-schedule">
+    <div class="container">
+        <div class="new-schedule-header">
+            <button class="new-schedule-header-button">
+                <svg class="new-shedule-header-button-icon" width="24" height="24">
+                    <use href="/img/arrow-left.svg#bi:arrow-left"></use>
+                </svg>
+            </button>
+            <ul class="new-schedule-header-list">
+                <li class="new-schedule-header-list-item">
+                    <button class="new-schedule-header-list-item-button">
+                        <svg class="new-schedule-header-list-item-button-icon" width="24" height="24">
+                            <use href="/img/checkBox.svg#Rectangle 7"></use>
+                        </svg>
+                        <svg class="new-schedule-header-list-item-button-iconIn" width="20" height="20">
+                            <use href="/img/checkMark.svg#Frame 57"></use>
+                        </svg>
+                    </button>
+                </li>
+                <li class="new-schedule-header-list-item">
+                    <button class="new-schedule-header-list-item-button">
+                        <svg class="new-schedule-header-list-item-button-icon" width="24" height="24">
+                            <use href="/img/checkMark.svg#Frame 57"></use>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+        </div>
+        <div class="wrapper">
+            <form class="wrapper-note-form">
+                <div class="wrapper-note-form-group">
+                    <label for="textTitle" class="wrapper-note-form-group-label title">Schedule</label>
+                    <input class="wrapper-note-form-group-input" type="text" id="textTitle" placeholder="Title" />
+                </div>
+                <div class="wrapper-note-form-group">
+                    <label  class="wrapper-note-form-group-label" for="toggle">Full day</label>
+                    <div class="wrapper-note-form-group-toggle" id="toggle">
+                        <span class="wrapper-note-form-group-toggle-circle" id="circle"></span>
+                        </span>
+                    </div>
+                </div>
+                <div class="wrapper-note-form-group">
+                    <label  class="wrapper-note-form-group-label" for="StartFrom">Start from</label>
+                    <button class="wrapper-note-form-group-btn" id="StartFrom" type="button">Set date</button>
+                </div>
+                <div class="wrapper-note-form-group" id="question">
+                    <label  class="wrapper-note-form-group-label" for="calendar">How many days should I remind you?</label>
+                    <input type="number" class="wrapper-note-form-group-number" id="inputQuestion" min="0" max="32" value="0">
+                    <button class="wrapper-note-form-group-SubmitBtn" id="SubmitBtn" type="button">Submit</button>
+                </div>
+                <div class="wrapper-note-form-group tracking" id="finishShow">
+                    <label  class="wrapper-note-form-group-label" for="FinishFrom">Finish</label>
+                    <button class="wrapper-note-form-group-btn" id="FinishFrom" type="button">Set date</button>
+                </div>
+                <div class="wrapper-note-form-group tracking">
+                    <label  class="wrapper-note-form-group-label" for="calendar">Repeat</label>
+                    <input class="wrapper-note-form-group-calendar" type="text" id="calendar"/>
+                </div>
+                <div class="wrapper-note-form-group tracking">
+                    <label  class="wrapper-note-form-group-label" for="calendar">Reminder</label>
+                    <input class="wrapper-note-form-group-calendar" type="text" id="calendar"/>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
